@@ -11,7 +11,14 @@ body {
   margin: 0;
   font-family: "Ubuntu Mono", monospace;
   font-size: 22px;
-  background: #ccc;
+  background-image: linear-gradient(
+    to right bottom,
+    #ffffff,
+    #dbdbdb,
+    #b8b8b8,
+    #969696,
+    #767676
+  );
 }
 .clock {
   display: flex;
@@ -29,9 +36,9 @@ body {
     line-height: 1.8;
     background: #999;
     border-radius: 5px;
-    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5),
-      5px 5px 15px rgba(0, 0, 0, 0.5);
-    transition: all 400ms ease-in-out;
+    box-shadow: -8px -8px 16px rgb(255, 255, 255),
+      8px 8px 12px rgba(0, 0, 0, 0.7);
+    transition: transform 400ms ease-in-out;
 
     &:nth-child(2n) {
       left: -2rem;
@@ -50,9 +57,8 @@ body {
       font-weight: bold;
       background: #777;
       border-radius: 50%;
-      box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5),
-        5px 5px 15px rgba(0, 0, 0, 0.5);
-      transition: all 400ms ease-in-out;
+      box-shadow: -8px -8px 12px #fff, 8px 5px 12px rgba(0, 0, 0, 0.7);
+      transition: transform 400ms ease-in-out;
     }
   }
 }

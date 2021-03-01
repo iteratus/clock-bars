@@ -4,39 +4,38 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const PrettierPlugin = require('prettier-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-module.exports = (env) => {
-    return {
-    mode: env.production ? 'production' : 'development',
-    entry: './src/index.js',
-    devtool: 'inline-source-map',
-    devServer: {
-        contentBase: './dist',
-    },
-    module: {
-        rules: [
-            {
-                test: /\.s?css$/i,
-                use: ['style-loader', 'css-loader', 'sass-loader'],
-            },
-            {
-                test: /\.(png|svg|jpe?g|gif|webp)$/i,
-                type: 'asset/resource',
-            },
-        ],
-    },
-    plugins: [
-        new CleanWebpackPlugin(),
-        new HtmlWebpackPlugin({
-            template: './webpack.html'
-        }),
-        new PrettierPlugin(),
-        new MiniCssExtractPlugin({
-            filename: !env.production ? '[name].css' : '[name].[hash].css',
-            chunkFilename: !env.production ? '[id].css' : '[id].[hash].css'
-        })
+module.exports = (env) => ({
+  mode: env.production ? 'production' : 'development',
+  entry: './src/index.js',
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: './dist',
+  },
+  module: {
+    rules: [
+      {
+        test: /\.s?css$/i,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+      {
+        test: /\.(png|svg|jpe?g|gif|webp)$/i,
+        type: 'asset/resource',
+      },
     ],
-    output: {
-        filename: '[name].bundle.js',
-        path: path.resolve(__dirname, 'dist'),
-    },
-}};
+  },
+  plugins: [
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      template: './webpack.html',
+    }),
+    new PrettierPlugin(),
+    new MiniCssExtractPlugin({
+      filename: !env.production ? '[name].css' : '[name].[hash].css',
+      chunkFilename: !env.production ? '[id].css' : '[id].[hash].css',
+    }),
+  ],
+  output: {
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+  },
+});
