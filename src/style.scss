@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap");
+
+:root {
+  --step-size: 2.5rem;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 22px;
+  background: #ccc;
+}
+.clock {
+  display: flex;
+  align-items: flex-start;
+  transform: translateY(40%);
+
+  > * {
+    position: relative;
+    width: 1.2rem;
+    margin: 2rem;
+    padding: 0.5rem 0.8rem;
+    color: #fff;
+    text-align: center;
+    word-wrap: break-word;
+    line-height: 1.8;
+    background: #999;
+    border-radius: 5px;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5),
+      5px 5px 15px rgba(0, 0, 0, 0.5);
+    transition: all 400ms ease-in-out;
+
+    &:nth-child(2n) {
+      left: -2rem;
+    }
+    &::after {
+      content: attr(data-active);
+      position: absolute;
+      left: -0.1rem;
+      top: -0.1rem;
+      display: grid;
+      place-items: center;
+      width: 3rem;
+      height: 3rem;
+      font-size: 1.6rem;
+      line-height: 0;
+      font-weight: bold;
+      background: #777;
+      border-radius: 50%;
+      box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5),
+        5px 5px 15px rgba(0, 0, 0, 0.5);
+      transition: all 400ms ease-in-out;
+    }
+  }
+}
+
+@for $i from 1 through 9 {
+  [data-active="#{$i}"] {
+    transform: translateY(calc(-#{$i} * var(--step-size)));
+
+    &::after {
+      transform: translateY(calc(#{$i} * var(--step-size)));
+    }
+  }
+}
