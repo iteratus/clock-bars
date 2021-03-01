@@ -1,3 +1,5 @@
+import './style.css';
+
 const elements = document.querySelectorAll(".clock > *");
 
 const clock = () => {

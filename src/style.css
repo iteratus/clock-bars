@@ -31,26 +31,27 @@ body {
     border-radius: 5px;
     box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 5px 5px 15px rgba(0, 0, 0, 0.5);
     transition: all 400ms ease-in-out;
-}
-.clock > *:nth-child(2n) {
-    left: -2rem;
+
 }
 .clock > *::after {
-    content: attr(data-active);
-    position: absolute;
-    left: -0.1rem;
-    top: -0.1rem;
-    display: grid;
-    place-items: center;
-    width: 3rem;
-    height: 3rem;
-    font-size: 1.6rem;
-    line-height: 0;
-    font-weight: bold;
-    background: #777;
-    border-radius: 50%;
-    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 5px 5px 15px rgba(0, 0, 0, 0.5);
-    transition: all 400ms ease-in-out;
+     content: attr(data-active);
+     position: absolute;
+     left: -0.1rem;
+     top: -0.1rem;
+     display: grid;
+     place-items: center;
+     width: 3rem;
+     height: 3rem;
+     font-size: 1.6rem;
+     line-height: 0;
+     font-weight: bold;
+     background: #777;
+     border-radius: 50%;
+     box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 5px 5px 15px rgba(0, 0, 0, 0.5);
+     transition: all 400ms ease-in-out;
+ }
+.clock > *:nth-child(2n) {
+    left: -2rem;
 }
 
 [data-active='1'] {
