@@ -12,6 +12,6 @@ setInterval(() => {
     ];
 
     elements.forEach((element, index) => {
-        element.className = `pos-${digets[index]}`;
+        element.dataset.active = digets[index];
     });
 }, 1000);
