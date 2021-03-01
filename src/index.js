@@ -1,8 +1,6 @@
 const elements = document.querySelectorAll(".clock > *");
 
-console.log(elements);
-
-setInterval(() => {
+const clock = () => {
     const date = new Date();
 
     const digets = [
@@ -14,4 +12,7 @@ setInterval(() => {
     elements.forEach((element, index) => {
         element.dataset.active = digets[index];
     });
-}, 1000);
+};
+
+setInterval(clock, 1000);
+clock();
