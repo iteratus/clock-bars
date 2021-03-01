@@ -5,16 +5,13 @@
 }
 
 body {
-    font-family: 'Ubuntu Mono', monospace;
-    font-size: 22px;
-    background: #ccc;
-    margin: 0;
-    height: 100vh;
-}
-#app {
     display: grid;
     place-items: center;
     height: 100vh;
+    margin: 0;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 22px;
+    background: #ccc;
 }
 .clock {
     display: flex;
