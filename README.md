@@ -5,3 +5,5 @@ https://www.reddit.com/r/oddlysatisfying/comments/lsa654/this_clock_hitting_midn
 I'd like to rebuild this beauty in vanilla JS and CSS without over-engineering it.
 
 This is used for educational purpose only.
+
+See in action: https://youthful-noyce-4368a1.netlify.app/
