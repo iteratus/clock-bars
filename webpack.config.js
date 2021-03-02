@@ -1,7 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const PrettierPlugin = require('prettier-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = (env) => ({
@@ -28,7 +27,6 @@ module.exports = (env) => ({
     new HtmlWebpackPlugin({
       template: './webpack.html',
     }),
-    new PrettierPlugin(),
     new MiniCssExtractPlugin({
       filename: !env.production ? '[name].css' : '[name].[hash].css',
       chunkFilename: !env.production ? '[id].css' : '[id].[hash].css',
