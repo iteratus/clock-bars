@@ -10,7 +10,6 @@ const clock = () => {
     + `0${date.getSeconds()}`.slice(-2);
 
   elements.forEach((element, index) => {
-    // eslint-disable-next-line no-param-reassign
     element.dataset.active = digits[index];
   });
 };
