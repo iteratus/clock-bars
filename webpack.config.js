@@ -9,9 +9,21 @@ module.exports = (env) => ({
   devtool: 'inline-source-map',
   devServer: {
     contentBase: './dist',
+    compress: env.production,
+    port: 10000,
   },
   module: {
     rules: [
+      {
+        test: /\.m?js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+          },
+        },
+      },
       {
         test: /\.s?css$/i,
         use: ['style-loader', 'css-loader', 'sass-loader'],
