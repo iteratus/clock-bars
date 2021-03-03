@@ -6,19 +6,19 @@
 
 body {
   display: grid;
-  place-items: center;
   height: 100vh;
   margin: 0;
-  font-family: "Ubuntu Mono", monospace;
-  font-size: 22px;
   background-image: linear-gradient(
     to right bottom,
-    #ffffff,
+    #fff,
     #dbdbdb,
     #b8b8b8,
     #969696,
     #767676
   );
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 22px;
+  place-items: center;
 }
 .clock {
   display: flex;
@@ -28,36 +28,36 @@ body {
   > * {
     position: relative;
     width: 1.2rem;
-    margin: 0 2rem;
     padding: 0.5rem 0.8rem;
-    color: #fff;
-    text-align: center;
-    word-wrap: break-word;
-    line-height: 1.8;
+    margin: 0 2rem;
     background: #999;
     border-radius: 5px;
     box-shadow: -8px -8px 16px rgb(255, 255, 255),
       8px 8px 12px rgba(0, 0, 0, 0.7);
+    color: #fff;
+    line-height: 1.8;
+    text-align: center;
     transition: transform 400ms ease-in-out;
+    word-wrap: break-word;
 
     &:nth-child(2n) {
       left: -2rem;
     }
     &::after {
-      content: attr(data-active);
       position: absolute;
-      left: -0.1rem;
       top: -0.1rem;
+      left: -0.1rem;
       display: grid;
-      place-items: center;
       width: 3rem;
       height: 3rem;
-      font-size: 1.6rem;
-      line-height: 0;
-      font-weight: bold;
       background: #777;
       border-radius: 50%;
       box-shadow: -8px -8px 12px #fff, 8px 5px 12px rgba(0, 0, 0, 0.7);
+      content: attr(data-active);
+      font-size: 1.6rem;
+      font-weight: bold;
+      line-height: 0;
+      place-items: center;
       transition: transform 400ms ease-in-out;
     }
   }
