@@ -8,7 +8,9 @@ module.exports = (env) => ({
   entry: './src/index.js',
   devtool: 'inline-source-map',
   devServer: {
-    contentBase: './dist',
+    static: {
+      directory: path.join(__dirname, "dist")
+    },
     compress: env.production,
     port: 10000,
   },
