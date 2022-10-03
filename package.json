@@ -47,12 +47,12 @@
     "stylelint-scss": "^4.3.0",
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.10.1"
+    "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
     "async": "^3.2.4",
     "eventsource": "^2.0.2",
-    "follow-redirects": "^1.15.1",
+    "follow-redirects": "^1.15.2",
     "minimist": "^1.2.6",
     "nanoid": "^4.0.0",
     "url-parse": "^1.5.10"
