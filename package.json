@@ -23,7 +23,7 @@
     "eslint": "8.52.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-node": "^4.1.0",
-    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-html": "^8.0.0",
     "eslint-plugin-import": "2.29.1",
     "eslint-plugin-jsx-a11y": "6.8.0",
@@ -31,7 +31,7 @@
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react": "7.33.2",
     "eslint-plugin-react-hooks": "4.6.0",
-    "eslint-webpack-plugin": "^4.0.1",
+    "eslint-webpack-plugin": "^4.1.0",
     "html-webpack-plugin": "^5.6.0",
     "mini-css-extract-plugin": "^2.7.5",
     "node-sass": "^9.0.0",
@@ -52,7 +52,7 @@
   "dependencies": {
     "async": "^3.2.5",
     "eventsource": "^2.0.2",
-    "follow-redirects": "^1.15.4",
+    "follow-redirects": "^1.15.6",
     "minimist": "^1.2.8",
     "nanoid": "^5.0.6",
     "url-parse": "^1.5.10"
