@@ -13,13 +13,13 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.24.6",
+    "@babel/core": "^7.24.7",
     "@babel/eslint-parser": "^7.24.7",
     "@babel/preset-env": "^7.24.7",
     "@babel/preset-react": "^7.23.3",
     "babel-loader": "^9.1.2",
     "clean-webpack-plugin": "^4.0.0",
-    "css-loader": "^6.7.3",
+    "css-loader": "^7.1.2",
     "eslint": "8.57.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-node": "^4.1.0",
@@ -37,7 +37,7 @@
     "node-sass": "^9.0.0",
     "prettier": "^3.3.0",
     "sass-loader": "^14.1.0",
-    "style-loader": "^3.3.3",
+    "style-loader": "^4.0.0",
     "stylelint": "^15.11.0",
     "stylelint-config-css-modules": "^4.4.0",
     "stylelint-config-idiomatic-order": "^10.0.0",
@@ -54,7 +54,7 @@
     "eventsource": "^2.0.2",
     "follow-redirects": "^1.15.6",
     "minimist": "^1.2.8",
-    "nanoid": "^5.0.6",
+    "nanoid": "^5.0.7",
     "url-parse": "^1.5.10"
   }
 }
