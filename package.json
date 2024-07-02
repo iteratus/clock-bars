@@ -37,7 +37,7 @@
     "node-sass": "^9.0.0",
     "prettier": "^3.3.0",
     "sass-loader": "^14.1.0",
-    "style-loader": "^3.3.3",
+    "style-loader": "^4.0.0",
     "stylelint": "^15.11.0",
     "stylelint-config-css-modules": "^4.4.0",
     "stylelint-config-idiomatic-order": "^10.0.0",
