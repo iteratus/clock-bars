@@ -50,7 +50,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
-    "async": "^3.2.5",
+    "async": "^3.2.6",
     "eventsource": "^2.0.2",
     "follow-redirects": "^1.15.6",
     "minimist": "^1.2.8",
