@@ -3317,10 +3317,10 @@ eslint-plugin-es@^3.0.0:
     eslint-utils "^2.0.0"
     regexpp "^3.0.0"
 
-eslint-plugin-html@^8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-html/-/eslint-plugin-html-8.0.0.tgz#27f72f3c36718bcd54e3e0869ad7102ac368fd8b"
-  integrity sha512-NINLBAXM3mLa3k5Ezr/kNLHAJJwbot6lS7Ro+SUftDw4cA51KMmcDuCf98GP6Q6kTVPY1hIggzskxAdxfUPXSA==
+eslint-plugin-html@^8.1.2:
+  version "8.1.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-html/-/eslint-plugin-html-8.1.2.tgz#3a7a092d1e19e7e494014ed0747c5873856d7e1c"
+  integrity sha512-pbRchDV2SmqbCi/Ev/q3aAikzG9BcFe0IjjqjtMn8eTLq71ZUggyJB6CDmuwGAXmYZHrXI12XTfCqvgcnPRqGw==
   dependencies:
     htmlparser2 "^9.1.0"
 
