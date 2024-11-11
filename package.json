@@ -26,7 +26,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-html": "^8.1.2",
     "eslint-plugin-import": "2.29.1",
-    "eslint-plugin-jsx-a11y": "6.9.0",
+    "eslint-plugin-jsx-a11y": "6.10.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "7.35.0",
@@ -44,7 +44,7 @@
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-standard": "^34.0.0",
     "stylelint-prettier": "^4.1.0",
-    "stylelint-scss": "^6.4.1",
+    "stylelint-scss": "^6.8.1",
     "webpack": "^5.94.0",
     "webpack-cli": "^5.1.1",
     "webpack-dev-server": "^5.1.0"
@@ -52,9 +52,9 @@
   "dependencies": {
     "async": "^3.2.6",
     "eventsource": "^2.0.2",
-    "follow-redirects": "^1.15.6",
+    "follow-redirects": "^1.15.9",
     "minimist": "^1.2.8",
-    "nanoid": "^5.0.7",
+    "nanoid": "^5.0.8",
     "url-parse": "^1.5.10"
   }
 }
