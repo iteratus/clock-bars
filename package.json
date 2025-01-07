@@ -47,7 +47,7 @@
     "stylelint-scss": "^6.8.1",
     "webpack": "^5.96.1",
     "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.1.0"
+    "webpack-dev-server": "^5.2.0"
   },
   "dependencies": {
     "async": "^3.2.6",
