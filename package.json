@@ -51,10 +51,10 @@
   },
   "dependencies": {
     "async": "^3.2.6",
-    "eventsource": "^2.0.2",
+    "eventsource": "^3.0.5",
     "follow-redirects": "^1.15.9",
     "minimist": "^1.2.8",
-    "nanoid": "^5.0.9",
+    "nanoid": "^5.1.2",
     "url-parse": "^1.5.10"
   }
 }
