@@ -52,7 +52,7 @@
   "dependencies": {
     "async": "^3.2.6",
     "eventsource": "^3.0.7",
-    "follow-redirects": "^1.15.11",
+    "follow-redirects": "^1.16.0",
     "minimist": "^1.2.8",
     "nanoid": "^5.1.7",
     "url-parse": "^1.5.10"
